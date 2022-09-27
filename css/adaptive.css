@@ -1,0 +1,338 @@
+/* Tablet Header*/
+
+@media (max-width: 1018px) {
+    .container,
+    .container-gray,
+    .container-video  {
+        max-width: 1018px;
+    }
+    .header__nav-list {
+        justify-content: right;
+    }
+    .header__nav-list a {
+        display: none;
+    }
+    .header__nav-list:last-child::after {
+        content: url(../img/Menu.svg);
+        margin-left: 14px;
+    }
+    .header__title {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .header__iphone-image {
+        width: 292.5px;
+    }
+    .header__age {
+        font-size: 20px;
+        line-height: 24px;
+        width: 98.8px;
+        bottom: 0;
+    }
+    .header__description-wrapper {
+        gap: 30px;
+    }
+    .header__subtitle {
+        font-size: 18px;
+        line-height: 22px;  
+        max-width: 498px;      
+    }
+}
+
+/* Tablet main*/
+
+@media (max-width: 1018px) {
+    .main__description-wrapper {
+    margin: 105px 0 120px;
+    }
+    .main__description {
+    padding-top: 0;
+    }
+    .main__title {
+        font-size: 32px;
+        line-height: 39px;
+        padding-top: 0;
+    }
+    .title_gray {
+        padding-top: 110px;
+    }
+    .main__android {
+        width: 300px;
+    }
+    .main__instruction-list,
+    .main__how-it-works {
+        font-size: 18px;
+        line-height: 27px;        
+    }
+    .main__img-iphone {
+        width: 326px;
+    }
+    .main__modules {
+        padding-bottom: 281px;
+    }
+    .main__modules-text {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .main__video-wrapper {
+        margin-top: 288px;
+    }
+    .main__watch-video {
+        padding-top: 0;
+    }
+    .main__benefits-icon,
+    .main__benefits-title,
+    .main__benefits-text,
+    .main__benefits-link {
+        padding-left: 20px;
+    }
+    .main__benefits-icon {
+        padding-top: 20px;
+        width: 90px;
+    }
+    .main__benefits-text {
+        font-size: 14px;
+        line-height: 21px;
+        padding-right: 28px;
+    }
+    .main__white-list-title {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .main__white-list-wrapper {
+        padding: 55px 0 57px 20px;
+    }
+}
+
+/* Tablet Footer*/
+
+@media (max-width: 1018px) {
+    .footer__copyright,
+    .footer__politics,
+    .footer__address,
+    .footer__email {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .footer__politics {
+        color: #6E8BF8;
+    }
+}
+
+/* Mobile Header*/
+
+@media (max-width: 767.98px) {
+    .container,
+    .container-gray,
+    .container-video  {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .container-white-list {
+        width: 100%;
+    }
+    .header__nav-list {
+        justify-content: right;
+    }
+    .header__nav-list a {
+        display: none;
+    }
+    .header__nav-list:last-child::after {
+        content: url(../img/Menu.svg);
+        margin-left: 14px;
+    }
+    .header__first-button,
+    .header__second-button {
+        display: none;
+    }
+    .header__title {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .header__iphone-image {
+        width: 100%;
+        margin-top: 31px;
+        padding-right: 0;
+    }
+    .header__age {
+        font-size: 16px;
+        line-height: 20px;
+        width: 75.52px;
+        bottom: 0;
+    }
+    .header__description-wrapper {
+        display: block;
+        margin-top: 40px;
+    }
+    .header__subtitle {
+        font-size: 14px;
+        line-height: 17px;  
+        max-width: 498px;      
+    }
+    .join-wrapper {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 21px;
+        max-width: 100%;
+    }
+    .join-wrapper__text {
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 17px;
+        margin-left: 0;
+    }
+    .join-wrapper__button {
+        width: 100%;
+    }
+}
+
+/* Mobile main*/
+
+@media (max-width: 767.98px) {
+    .main__description-wrapper {
+        flex-direction: column-reverse;
+        margin: 105px 0 74px;
+        gap: 48px;
+    }
+    .main__description {
+        padding-top: 0;
+    }
+    .main__title {
+        font-size: 22px;
+        line-height: 27px;
+        padding-top: 0;
+    }
+    .main__instruction-list li:first-child::before,
+    .main__instruction-list li:nth-child(2)::before,
+    .main__instruction-list li:nth-child(3)::before {
+        flex: 0 0 59px;
+    }
+    .title_gray {
+        padding-top: 57px;
+        text-align: left;
+    }
+    .main__android {
+        display: block;
+        width: 85%;
+        margin: 35px auto 0;
+    }
+    .main__instruction-list,
+    .main__how-it-works {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .main__img-iphone {
+        width: 214.66px;
+        padding-left: 34px;
+    }
+    .main__modules {
+        display: block;
+        margin-top: 42px;
+    }
+    .main__modules-text {
+        font-size: 18px;    
+        line-height: 27px;
+        margin-top: 20px;
+        margin-bottom: 42px;       
+    }
+    .main__video-wrapper {
+        display: block;
+    }
+    .main__watch-video {
+        padding-top: 12px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .main__video-player {
+        width: 100%;
+        margin-top: 42px;
+    }
+    .main__benefits-wrapper {
+        display: block;
+        margin-top: 44px;
+    }
+    .main__benefits {
+        margin-bottom: 40px;
+    }
+    .main__benefits:last-child {
+        margin-bottom: 0;
+    }
+    .main__benefits-icon,
+    .main__benefits-title,
+    .main__benefits-text,
+    .main__benefits-link {
+        padding-left: 9px;
+    }
+    .main__benefits-icon {
+        padding-top: 20px;
+        width: 51px;
+    }
+    .main__benefits-title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    .main__benefits-text {
+        font-size: 14px;
+        line-height: 21px;
+        padding-right: 14px;
+    }
+    .main__benefits-link {
+        padding-bottom: 25px;
+    }
+    .main__white-list-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .main__white-list-wrapper {
+        padding: 51px 10px 52px;
+    }
+    .join-second-wrapper {
+        flex-direction: column-reverse;
+        margin-top: 8px;
+        gap: 20px;
+    }
+    .join-wrapper__second-text {
+        margin-left: 0;
+    }
+}
+
+/* Mobile Footer*/
+
+@media (max-width: 767.98px) {
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 21px;
+        padding-top: 52px;
+        padding-bottom: 44px;
+    }
+    .footer__politics-wrapper {
+        order: 1;
+    }
+    .footer__link-icons-wrapper {
+        text-align: center;
+        order: 2;
+    }
+    .footer__address-wrapper {
+        order: 3;
+    }
+    .footer__copyright,
+    .footer__politics,
+    .footer__address,
+    .footer__email {
+        font-size: 14px;
+        line-height: 21px;        
+    }
+    .footer__politics {
+        color: #6E8BF8;
+    }
+}
+ /* DECORE */
+@media (max-width: 853px) {
+    .main__white-list-decore {
+        display: none;
+    }
+}
