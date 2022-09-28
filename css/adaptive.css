@@ -1,38 +1,42 @@
 /* Tablet Header*/
 
 @media (max-width: 1018px) {
-    .container,
-    .container-gray,
-    .container-video  {
+    .container  {
         max-width: 1018px;
     }
-    .header__nav-list {
+    .menu__nav-list {
         justify-content: right;
     }
-    .header__nav-list a {
+    .menu__nav-list a {
         display: none;
     }
-    .header__nav-list:last-child::after {
-        content: url(../img/Menu.svg);
+    .menu__burger {
+        display: block;
         margin-left: 14px;
+        background-color: unset;
+        border: none;
+        flex: 0 0 44px;
+        height: 44px;
+        padding: 0;
     }
-    .header__title {
+    .menu__title {
         font-size: 32px;
         line-height: 39px;
     }
-    .header__iphone-image {
+    .menu__iphone-image {
         width: 292.5px;
     }
-    .header__age {
+    .menu__age {
         font-size: 20px;
         line-height: 24px;
         width: 98.8px;
         bottom: 0;
     }
-    .header__description-wrapper {
+    .menu__description-wrapper {
         gap: 30px;
+        margin-top: 73px;
     }
-    .header__subtitle {
+    .menu__subtitle {
         font-size: 18px;
         line-height: 22px;  
         max-width: 498px;      
@@ -42,11 +46,17 @@
 /* Tablet main*/
 
 @media (max-width: 1018px) {
-    .main__description-wrapper {
-    margin: 105px 0 120px;
+    .main__three-minutes {
+        padding-top: 101px;
     }
     .main__description {
-    padding-top: 0;
+        padding-top: 0;
+    }
+    .main__description-wrapper {
+        flex-direction: column;
+    }
+    .mobile-adapt {
+        flex-direction: column-reverse;
     }
     .main__title {
         font-size: 32px;
@@ -60,9 +70,12 @@
         width: 300px;
     }
     .main__instruction-list,
-    .main__how-it-works {
+    .main__subtitle {
         font-size: 18px;
         line-height: 27px;        
+    }
+    .main__illustration {
+        width: 100%;
     }
     .main__img-iphone {
         width: 326px;
@@ -74,26 +87,21 @@
         font-size: 22px;
         line-height: 33px;
     }
-    .main__video-wrapper {
-        margin-top: 288px;
+    .main__video {
+        padding-top: 220px;
     }
     .main__watch-video {
         padding-top: 0;
     }
-    .main__benefits-icon,
-    .main__benefits-title,
-    .main__benefits-text,
-    .main__benefits-link {
-        padding-left: 20px;
+    .main__benefits {
+        padding: 20px 28px 46px 20px;
     }
     .main__benefits-icon {
-        padding-top: 20px;
         width: 90px;
     }
     .main__benefits-text {
         font-size: 14px;
         line-height: 21px;
-        padding-right: 28px;
     }
     .main__white-list-title {
         font-size: 32px;
@@ -101,6 +109,9 @@
     }
     .main__white-list-wrapper {
         padding: 55px 0 57px 20px;
+    }
+    .decore-rotate {     
+        max-width: 194px;        
     }
 }
 
@@ -122,50 +133,46 @@
 /* Mobile Header*/
 
 @media (max-width: 767.98px) {
-    .container,
-    .container-gray,
-    .container-video  {
+    .container  {
         max-width: 100%;
         box-sizing: border-box;
         padding: 0 10px;
     }
-    .container-white-list {
+    .main__white-list {
         width: 100%;
     }
-    .header__nav-list {
+    .menu__nav-list {
         justify-content: right;
-    }
-    .header__nav-list a {
         display: none;
     }
-    .header__nav-list:last-child::after {
+    .menu__nav-list:last-child::after {
         content: url(../img/Menu.svg);
         margin-left: 14px;
     }
-    .header__first-button,
-    .header__second-button {
+    .menu__first-button,
+    .menu__second-button {
         display: none;
     }
-    .header__title {
+    .menu__title {
         font-size: 22px;
         line-height: 27px;
     }
-    .header__iphone-image {
+    .menu__iphone-image {
         width: 100%;
         margin-top: 31px;
         padding-right: 0;
     }
-    .header__age {
+    .menu__age {
         font-size: 16px;
         line-height: 20px;
         width: 75.52px;
         bottom: 0;
     }
-    .header__description-wrapper {
+    .menu__description-wrapper {
         display: block;
         margin-top: 40px;
     }
-    .header__subtitle {
+    .menu__subtitle {
         font-size: 14px;
         line-height: 17px;  
         max-width: 498px;      
@@ -190,9 +197,11 @@
 /* Mobile main*/
 
 @media (max-width: 767.98px) {
+    .main__three-minutes {
+        padding-top: 105px;
+        padding-bottom: 74px;
+    }
     .main__description-wrapper {
-        flex-direction: column-reverse;
-        margin: 105px 0 74px;
         gap: 48px;
     }
     .main__description {
@@ -218,7 +227,7 @@
         margin: 35px auto 0;
     }
     .main__instruction-list,
-    .main__how-it-works {
+    .main__subtitle {
         font-size: 14px;
         line-height: 21px;
     }
@@ -229,6 +238,7 @@
     .main__modules {
         display: block;
         margin-top: 42px;
+        padding-bottom: 140px;
     }
     .main__modules-text {
         font-size: 18px;    
@@ -245,9 +255,14 @@
         font-size: 14px;
         line-height: 18px;
     }
+    .main__gray-background {
+        padding-top: 42px;
+    }
     .main__video-player {
         width: 100%;
-        margin-top: 42px;
+    }
+    .main__button {
+        width: 100%;
     }
     .main__benefits-wrapper {
         display: block;
@@ -255,18 +270,12 @@
     }
     .main__benefits {
         margin-bottom: 40px;
+        padding: 20px 14px 25px 9px;
     }
     .main__benefits:last-child {
         margin-bottom: 0;
     }
-    .main__benefits-icon,
-    .main__benefits-title,
-    .main__benefits-text,
-    .main__benefits-link {
-        padding-left: 9px;
-    }
     .main__benefits-icon {
-        padding-top: 20px;
         width: 51px;
     }
     .main__benefits-title {
@@ -277,10 +286,6 @@
     .main__benefits-text {
         font-size: 14px;
         line-height: 21px;
-        padding-right: 14px;
-    }
-    .main__benefits-link {
-        padding-bottom: 25px;
     }
     .main__white-list-title {
         font-size: 18px;
@@ -297,12 +302,15 @@
     .join-wrapper__second-text {
         margin-left: 0;
     }
+    .decore-rotate {     
+        display: none;        
+    }
 }
 
 /* Mobile Footer*/
 
 @media (max-width: 767.98px) {
-    .footer-wrapper {
+    .footer__wrapper {
         flex-direction: column;
         justify-content: center;
         gap: 21px;
