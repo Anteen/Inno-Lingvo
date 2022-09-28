@@ -1,38 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
-.container,
-.container-gray,
-.container-video  {
+.container  {
     max-width: 1240px;
     margin: 0 auto;
     padding: 0 40px;
+    position: relative;
 }
 .header {
-    background: linear-gradient(91.25deg, #BF2ED1 0.92%, #985CE4 51.04%, #6E8BF8 99.92%);
+    background-image: url(../img/header--bnd.png), linear-gradient(91.25deg, #BF2ED1 0.92%, #985CE4 51.04%, #6E8BF8 99.92%);
+    background-size: cover;
+    background-position-y: bottom;
 }
-.header__wrapper {
+.header__menu {
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
     align-items: center;
 }
-.header__logo-wrapper {
+.menu__logo-wrapper {
     flex: 0 0 174.5px;
     position: relative;
     height: 36px;
 }
-.header__logo {
+.menu__logo {
     position: absolute;
     left: -7px;
     top: -4px;
 }
-.header__nav-list {
+.menu__nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 922px;
-    gap: 10px;
+    gap: 20px;
+    margin-left: 30px;
 }
-.header__nav-list  a {   
+.menu__nav-list  a {   
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -42,13 +44,18 @@
     text-decoration: none;
 
 }
-.header__nav-list  li {
+.menu__nav-list  li {
     text-align: center;
 }
 .header button {
     cursor: pointer;
 }
-.header__first-button {
+.menu__first-button,
+.menu__second-button {
+    margin-left: 26px;
+    flex-shrink: 0;
+}
+.menu__first-button {
     height: 41px;
     border-radius: 10px;
     width: 129px;
@@ -56,23 +63,27 @@
     background-color: unset;
     color: #FFFFFF;
 }
-.header__second-button {
+.menu__second-button {
     height: 41px;
     border-radius: 10px;
     width: 156px;
     background-color: #F8F8F8;
     border: none;
 }
-.header__description-wrapper {
+.main__how-it-works {
+    padding-top: 115px;
+    padding-bottom: 121px; 
+}
+.menu__description-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 115px;
     gap: 60px;
+    margin-top: 111px;
 }
-.header__description {
+.menu__description {
     padding-top: 28px;
 }
-.header__title {
+.menu__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
@@ -83,9 +94,10 @@
     padding-bottom: 16px;
     position: relative;
 }
-
-
-.header__age {
+.menu__burger {
+    display: none;
+}
+.menu__age {
     display: inline-block;
     width: 127px;
     font-weight: 700;
@@ -101,7 +113,7 @@
     right: 0;
     bottom: -10px;
 }
-.header__subtitle {
+.menu__subtitle {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -149,17 +161,18 @@
 .join-wrapper__text span {
     font-weight: bold;
 }
-.header__iphone-image {
+.menu__iphone-image {
     box-sizing: border-box;
     padding-right: 56px;
 }
 
 /*==============================*/
-
+.main__three-minutes {
+    padding-top: 144px;
+}
 .main__description-wrapper {
     display: flex;
     gap: 94px;
-    margin: 144px 0 120px;
 }
 .main__description {
     padding-top: 36px;
@@ -175,7 +188,7 @@
     padding-top: 120px;
 }
 .main__instruction-list,
-.main__how-it-works {
+.main__subtitle {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -234,6 +247,22 @@
 .main__gray-background {
     width: 100%;
     background-color: #E9EBF7;
+    position: relative;
+}
+.gray-background__decore {
+    position: absolute;
+}
+.decore-lines {
+    left: 0;
+    top: 189px;
+}
+.decore-green {
+    top: 0;
+    right: 324px;
+}
+.decore-triangle {
+    top: 473px;
+    right: 0;
 }
 .main__modules {
     display: grid;
@@ -256,10 +285,7 @@
     line-height: 39px;
     color: #213744;
 }
-.container-gray {
-    position: relative;
-}
-.container-white-list {
+.main__white-list {
     width: 93.5%;
     background-image: url(../img/signup-bg\ 1.png);
     background-size: cover;
@@ -273,7 +299,7 @@
     right: 0;
     margin: 0 auto;
 }
-.container-second-white-list{
+.white-list-background-color{
     bottom: -140px;
     background-image: none;
     background: linear-gradient(93.01deg, #BE30D2 6.8%, #7188F7 99.21%);
@@ -300,10 +326,17 @@
     bottom: 0;
     right: 40px;
 }
+.main__video {
+    padding-top: 179px;
+    padding-bottom: 100px;
+    background-image: url(../img/apples.png);
+    background-position: center 384px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
 .main__video-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 179px;
 }
 .main__watch-video {
     font-family: 'Montserrat';
@@ -313,11 +346,17 @@
     line-height: 24px;
     color: #535353;
     padding-top: 123px;
-    max-width: 320px;
+    max-width: 375px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.main__watch-video::before {
+    content: url(../img/video-circle.svg);
 }
 .main__video-player {
     display: block;
-    margin: 79px auto 121px;
+    margin: 79px auto 0;
 }
 .main__benefits-wrapper {
     display: grid;
@@ -332,16 +371,10 @@
     max-width: 560px;
     box-shadow: 0px 10px 30px -6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    box-sizing: border-box;
+    padding: 33px 62px 46px 40px;
 }
-.main__benefits-icon,
-.main__benefits-title,
-.main__benefits-text,
-.main__benefits-link {
-    padding-left: 40px;
-}
-.main__benefits-icon {
-    padding-top: 33px;
-}
+
 .main__benefits-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -359,10 +392,9 @@
     line-height: 24px;
     color: #535353;
     max-width: 493px;
-    padding-right: 62px;
 }
 .main__benefits-link {
-    display: block;
+    display: inline-block;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -370,7 +402,6 @@
     line-height: 21px;
     color: #3BA3FF;
     margin-top: 8px;
-    padding-bottom: 46px;
     text-decoration: none;
 }
 .main__benefits-link::after {
@@ -379,6 +410,12 @@
 }
 .main__white-list-second-wrapper {
     padding: 77px 0 57px 42px;
+}
+.decore-rotate {
+    top: 0;
+    left: 0;
+    transform: scale(-1,1) rotate(180deg);
+
 }
 .join-wrapper__second-text  {
     margin-left: 50px;
@@ -392,7 +429,10 @@
 
 /*==============================*/
 
-.footer-wrapper {
+.footer {
+    margin-top: 140px;
+}
+.footer__wrapper {
     margin-top: 140px;
     display: flex;
     justify-content: space-between;
@@ -417,9 +457,6 @@
     text-align: center;
     color: #535353;
 }
-
-
-
  /*.main__white-list-wrapper,
 .main__white-list-second-wrapper {
     display: none;
